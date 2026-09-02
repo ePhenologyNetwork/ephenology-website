@@ -8,14 +8,14 @@
 
 export const homeContent = {
   navigation: [
-    { label: "Home", href: "#top" },
-    { label: "Network", href: "#monitoring" },
-    { label: "Monitoring Sites", href: "#environments" },
+    { label: "Home", href: "/" },
+    { label: "The Network", href: "/network" },
+    { label: "Monitoring Sites", href: "/monitoring-sites" },
     { label: "People" },
     { label: "Publications" },
     { label: "Data Sharing" },
     { label: "News" },
-    { label: "Contact", href: "#contact" },
+    { label: "Contact", href: "/#contact" },
   ],
 
   hero: {

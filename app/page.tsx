@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { homeContent } from "./content";
+import { ContactFooter } from "./contact-footer";
 
 const BrandLogo = ({ footer = false }: { footer?: boolean }) => (
   <Image
@@ -17,17 +18,26 @@ export default function Home() {
     <main>
       <section className="hero">
         <nav className="nav" aria-label="Main navigation">
-          <a className="brand" href="#top" aria-label="e-Phenology home">
+          <a className="brand" href="/" aria-label="Go to the e-Phenology home page" title="Home">
             <BrandLogo />
           </a>
 
           <div className="nav-links">
-            {homeContent.navigation.map((item) =>
-              item.href ? (
-                <a key={item.label} href={item.href}>
-                  {item.label}
-                </a>
-              ) : (
+              {homeContent.navigation.map((item) =>
+                item.label === "The Network" ? (
+                  <div className="nav-menu" key={item.label}>
+                    <a className="nav-menu-trigger" href={item.href}>
+                      {item.label}<span className="nav-menu-icon" aria-hidden="true" />
+                    </a>
+                    <div className="nav-submenu" aria-label="The Network sections">
+                      <a href="/network#foundation">Foundation</a>
+                      <a href="/network#network-growth">Network Growth</a>
+                      <a href="/network#participate">How to Participate</a>
+                    </div>
+                  </div>
+                ) : item.href ? (
+                  <a key={item.label} href={item.href}>{item.label}</a>
+                ) : (
                 <span
                   className="nav-placeholder"
                   key={item.label}
@@ -124,6 +134,49 @@ export default function Home() {
         </figure>
       </section>
 
+      <section className="explore-network-section" id="explore-network">
+        <div className="explore-network-heading">
+          <p className="section-number">Explore the network</p>
+          <div>
+            <h2>Follow the observations. Become part of the network.</h2>
+            <p>Discover where we work and how researchers and institutions can connect with e-Phenology.</p>
+          </div>
+        </div>
+
+        <div className="explore-network-grid">
+          <article className="explore-network-card map-callout-card">
+            <div className="home-map-preview">
+              <Image
+                src="/home/monitoring-sites-map-thumbnail.jpg"
+                alt="Map of e-Phenology monitoring sites across Brazil"
+                fill
+                sizes="(max-width: 760px) 100vw, 50vw"
+              />
+              <div className="home-map-stat"><strong>23</strong><span>monitoring sites</span></div>
+            </div>
+            <div className="explore-network-copy">
+              <p className="explore-card-label">Discover our monitoring sites</p>
+              <h3>A network across tropical ecosystems.</h3>
+              <p>Explore the locations, ecosystems and observations that shape our tropical phenology monitoring network.</p>
+              <a href="/monitoring-sites">Explore the map <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+
+          <article className="explore-network-card participate-callout-card">
+            <div className="participate-image-pair">
+              <Image src="/home/how-to-participate-field-installation.jpg" alt="Researchers installing monitoring equipment in a campo rupestre site" fill sizes="(max-width: 760px) 100vw, 25vw" />
+              <Image src="/home/how-to-participate-tower.jpg" alt="Researchers collecting data from a monitoring tower in the Cerrado" fill sizes="(max-width: 760px) 100vw, 25vw" />
+            </div>
+            <div className="explore-network-copy">
+              <p className="explore-card-label">Join the e-Phenology Network</p>
+              <h3>Build the next chapter with us.</h3>
+              <p>Researchers and institutions can contribute observations, establish new monitoring sites and collaborate on the analysis of tropical vegetation dynamics.</p>
+              <a href="/network#participate">How to participate <span aria-hidden="true">↗</span></a>
+            </div>
+          </article>
+        </div>
+      </section>
+
       <section className="funding-section">
         <div className="section-copy">
           <p className="section-number">{homeContent.funding.sectionLabel}</p>
@@ -149,12 +202,7 @@ export default function Home() {
         </div>
       </section>
 
-      <footer id="contact">
-        <a className="brand" href="#top">
-          <BrandLogo footer />
-        </a>
-        <p>{homeContent.footer.text}</p>
-      </footer>
+      <ContactFooter />
     </main>
   );
 }
