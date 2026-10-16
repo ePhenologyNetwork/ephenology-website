@@ -2,7 +2,7 @@
   {
     "fullName": "Bruna Alberton",
     "displayName": "Dr Bruna Alberton",
-    "category": "Researcher",
+    "category": "Coordination",
     "role": "Researcher and Data management and curation",
     "institution": "Sao Paulo State Univeristy",
     "city": "Rio Claro",
@@ -37,13 +37,13 @@
     "orcid": "https://orcid.org/0000-0001-5265-8988",
     "lattes": "http://lattes.cnpq.br/1012217731137451",
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/patricia-morellato.jpeg"
   },
   {
     "fullName": "Magna Soelma Beserra de Moura",
     "displayName": "Dr Magna Moura",
     "category": "Researcher",
-    "role": "Researcher ",
+    "role": "Researcher",
     "institution": "Embrapa Tropical Agroindustry",
     "city": "Fortaleza",
     "country": "Brazil",
@@ -56,7 +56,7 @@
     "orcid": "https://orcid.org/0000-0002-2844-1399",
     "lattes": "http://lattes.cnpq.br/7257985879431382",
     "personalWebsite": "https://www.embrapa.br/en/team/-/empregado/313686/magna-soelma-beserra-de-moura",
-    "photo": null
+    "photo": "/people/magna-soelma-beserra-de-moura.jpeg"
   },
   {
     "fullName": "Nattália do Prado Neves",
@@ -78,7 +78,7 @@
     "orcid": "https://orcid.org/0000-0002-6696-4588",
     "lattes": "http://lattes.cnpq.br/3953199822620061",
     "personalWebsite": null,
-    "photo": "/people/nattalia-neves.jpg"
+    "photo": "/people/nattalia-do-prado-neves.jpg"
   },
   {
     "fullName": "Mateus Geovane Lima da Silva",
@@ -101,7 +101,7 @@
     "orcid": "https://orcid.org/0000-0002-4655-0273",
     "lattes": "http://lattes.cnpq.br/8973973417296133",
     "personalWebsite": null,
-    "photo": "/people/mateus-silva.jpeg"
+    "photo": "/people/mateus-geovane-lima-da-silva.jpeg"
   },
   {
     "fullName": "Alexandre Maniçoba da Rosa Ferraz Jardim",
@@ -120,7 +120,7 @@
     "orcid": "https://orcid.org/0000-0001-7094-3635",
     "lattes": "http://lattes.cnpq.br/9981205244282499",
     "personalWebsite": null,
-    "photo": "/people/alexandre-jardim.jpg"
+    "photo": "/people/alexandre-manicoba-da-rosa-ferraz-jardim.jpg"
   },
   {
     "fullName": "Matheus Carvalho Vergne",
@@ -196,8 +196,8 @@
     "fullName": "Ricardo da Silva Torres",
     "displayName": "Ricardo da Silva Torres",
     "category": "Researcher",
-    "role": "Researcher ",
-    "institution": null,
+    "role": "Researcher",
+    "institution": "Wageningen University & Research",
     "city": null,
     "country": null,
     "researchAreas": [],
@@ -207,14 +207,14 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/ricardo-da-silva-torres.jpeg"
   },
   {
     "fullName": "Jurandy Almeida",
     "displayName": "Jurandy Almeida",
     "category": "Researcher",
-    "role": "Researcher ",
-    "institution": null,
+    "role": "Researcher",
+    "institution": "Federal University of Sao Carlos",
     "city": null,
     "country": null,
     "researchAreas": [],
@@ -224,14 +224,14 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/jurandy-almeida.jpeg"
   },
   {
     "fullName": "Jefferson dos Santos",
     "displayName": "Jefferson dos Santos",
     "category": "Researcher",
-    "role": "Researcher ",
-    "institution": null,
+    "role": "Researcher",
+    "institution": "University of Sheffield",
     "city": null,
     "country": null,
     "researchAreas": [],
@@ -241,14 +241,14 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/jefferson-dos-santos.jpeg"
   },
   {
     "fullName": "Maria Maraíza  Pereira dos Santos",
     "displayName": "Maria Maraíza  Pereira dos Santos",
     "category": "Student",
     "role": "PhD candidate",
-    "institution": null,
+    "institution": "São Paulo State University",
     "city": null,
     "country": null,
     "researchAreas": [],
@@ -258,14 +258,14 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/maria-maraiza-pereira-dos-santos.jpg"
   },
   {
     "fullName": "Desiree Ramos",
     "displayName": "Desiree Ramos",
     "category": "Researcher",
     "role": "Postdoctoral Researcher",
-    "institution": null,
+    "institution": "Instituto Tecológico Vale (ITV)",
     "city": null,
     "country": null,
     "researchAreas": [],
@@ -275,13 +275,13 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/desiree-ramos.jpg"
   },
   {
     "fullName": "John Cunha",
     "displayName": "John Cunha",
     "category": "Collaborator",
-    "role": "Researcher ",
+    "role": "Researcher",
     "institution": null,
     "city": null,
     "country": null,
@@ -295,25 +295,8 @@
     "photo": null
   },
   {
-    "fullName": "Rodolfo Nóbrega",
-    "displayName": "Rodolfo Nóbrega",
-    "category": "Collaborator",
-    "role": "Researcher ",
-    "institution": null,
-    "city": null,
-    "country": null,
-    "researchAreas": [],
-    "biography": null,
-    "startYear": null,
-    "email": null,
-    "orcid": null,
-    "lattes": null,
-    "personalWebsite": null,
-    "photo": null
-  },
-  {
-    "fullName": "Bruce",
-    "displayName": "Bruce",
+    "fullName": "Bruce Silva",
+    "displayName": "Bruce Silva",
     "category": "Technical team",
     "role": "Field Technician",
     "institution": null,
@@ -329,10 +312,10 @@
     "photo": null
   },
   {
-    "fullName": "Eduardo Souza",
-    "displayName": "Eduardo Souza",
+    "fullName": "Jose Raliuson Inácio Silva",
+    "displayName": "Jose Raliuson Inácio Silva",
     "category": "Collaborator",
-    "role": "Researcher ",
+    "role": "Researcher",
     "institution": null,
     "city": null,
     "country": null,
@@ -343,30 +326,13 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
-  },
-  {
-    "fullName": "Raliuson Silva",
-    "displayName": "Raliuson Silva",
-    "category": "Technical team",
-    "role": "Field Technician",
-    "institution": null,
-    "city": null,
-    "country": null,
-    "researchAreas": [],
-    "biography": null,
-    "startYear": null,
-    "email": null,
-    "orcid": null,
-    "lattes": null,
-    "personalWebsite": null,
-    "photo": null
+    "photo": "/people/jose-raliuson-inacio-silva.jpeg"
   },
   {
     "fullName": "Thieres Silva",
     "displayName": "Thieres Silva",
     "category": "Collaborator",
-    "role": "Researcher ",
+    "role": "Researcher",
     "institution": null,
     "city": null,
     "country": null,
@@ -383,7 +349,7 @@
     "fullName": "Romualdo Lima",
     "displayName": "Romualdo Lima",
     "category": "Collaborator",
-    "role": "Researcher ",
+    "role": "Researcher",
     "institution": null,
     "city": null,
     "country": null,
@@ -394,14 +360,14 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/romualdo-lima.jpeg"
   },
   {
     "fullName": "Mario Marcos do Espírito Santo",
     "displayName": "Mario Marcos do Espírito Santo",
     "category": "Collaborator",
-    "role": "Researcher ",
-    "institution": null,
+    "role": "Researcher",
+    "institution": "Unimontes",
     "city": null,
     "country": null,
     "researchAreas": [],
@@ -411,14 +377,14 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/mario-marcos-do-espirito-santo.jpg"
   },
   {
     "fullName": "Italo Coutinho",
     "displayName": "Italo Coutinho",
     "category": "Collaborator",
-    "role": "Researcher ",
-    "institution": null,
+    "role": "Researcher",
+    "institution": "University of Ceará",
     "city": null,
     "country": null,
     "researchAreas": [],
@@ -428,6 +394,6 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/italo-coutinho.jpg"
   }
 ]
