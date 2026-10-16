@@ -48,7 +48,7 @@ export default function PeoplePage() {
                   <a className="nav-menu-trigger" href={item.href}>{item.label}<span className="nav-menu-icon" aria-hidden="true" /></a>
                   <div className="nav-submenu" aria-label="The Network sections">
                     <a href="/network#foundation">Foundation</a>
-                    <a href="/network#network-growth">Network Growth</a>
+                    <a href="/network#network-growth">What do we monitor</a>
                     <a href="/network#participate">How to Participate</a>
                   </div>
                 </div>

@@ -22,7 +22,7 @@ export default function NetworkPage() {
                     </a>
                     <div className="nav-submenu" aria-label="The Network sections">
                       <a href="#foundation">Foundation</a>
-                      <a href="#network-growth">Network Growth</a>
+                      <a href="#network-growth">What do we monitor</a>
                       <a href="#participate">How to Participate</a>
                     </div>
                   </div>
@@ -38,13 +38,12 @@ export default function NetworkPage() {
           <h1>{networkContent.hero.title}</h1>
           <div className="network-introduction">
             <p>{networkContent.hero.introduction}</p>
-            <p>{networkContent.hero.supportingText}</p>
           </div>
         </section>
       </div>
 
       <section className="network-history" aria-label="History of the e-Phenology Network">
-        {networkContent.milestones.map((milestone) => (
+        {networkContent.milestones.slice(0, 2).map((milestone) => (
           <article
             className="network-milestone"
             id={
@@ -53,7 +52,10 @@ export default function NetworkPage() {
             }
             key={milestone.year}
           >
-            <div className="milestone-year">{milestone.year}</div>
+            <div className="milestone-year">
+              {milestone.year === "2010–2011" ? "Foundation" :
+                milestone.year === "2013–2015" ? "What do we monitor" : milestone.year}
+            </div>
             <div className="milestone-copy">
               <h2>{milestone.title}</h2>
               {milestone.year === "2010–2011" ? (
@@ -61,40 +63,59 @@ export default function NetworkPage() {
                   <div>
                     {milestone.paragraphs.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
                   </div>
-                  <NetworkVideo />
-                </div>
-              ) : milestone.paragraphs.map((paragraph, index) => (
-                  <div className="milestone-content" key={paragraph}>
-                    {milestone.year === "2022" ? (
-                      <LinkedParagraph text={paragraph} linkText="PhenoChange" href="https://kyledexter.github.io/PhenoChange/about/" />
-                    ) : (
-                      <p>{paragraph}</p>
-                    )}
-                    {milestone.year === "2013–2015" && index === 1 && <GrasslandsMedia />}
-                    {milestone.year === "2013–2015" && index === milestone.paragraphs.length - 1 && <CaatingaPanel />}
-                    {milestone.year === "2019" && index === milestone.paragraphs.length - 1 && <DryForestPanel />}
-                    {milestone.year === "2022" && index === milestone.paragraphs.length - 1 && <AfricaSites />}
+                  <div className="foundation-video-stack">
+                    <NetworkVideo
+                      videoId="xIOXb9-__Fc"
+                      title="About the e-Phenology Network"
+                      caption="Discover the origins and scientific vision of the e-Phenology Network."
+                    />
+                    <NetworkVideo
+                      videoId="9foSxoI25Pg"
+                      title="Research developed by the e-Phenology Network"
+                      caption="Learn more about the research and monitoring developed by the e-Phenology Network."
+                    />
                   </div>
-                ))}
+                </div>
+              ) : (
+                <>
+                  <div className="monitoring-intro-layout">
+                    <div>
+                      {milestone.paragraphs.slice(0, 3).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                    </div>
+                    <figure className="monitoring-methods-figure">
+                      <Image
+                        src="/network/phenology-monitoring-methods.png"
+                        alt="Diagrams and photographs of phenocamera monitoring above tree canopies and tropical mountain grasslands"
+                        width={477}
+                        height={328}
+                        sizes="(max-width: 760px) calc(100vw - 32px), 42vw"
+                      />
+                      <figcaption>
+                        Brazilian sites from e-phenology network and their different phenology monitoring setups for woody and open vegetation: (A) sketch of the hemispherical lens camera mounting design for forest canopy; (B) camera set up in the field; (C) sample image captured by the hemispherical lens digital camera in the cerrado sensu stricto vegetation (Itirapina, SP); (D) sketch of the camera mounting design for a landscape perspective; (E) camera set up in the field, (F) sample image of the heterogeneous landscape in the Serra do Cipó mountain range (Santana do Riacho, Minas Gerais State, Brazil). For more details, see: {" "}
+                        <a href="https://www.sciencedirect.com/science/article/pii/S2530064417300019" target="_blank" rel="noreferrer">Alberton et al., 2017</a>.
+                      </figcaption>
+                    </figure>
+                  </div>
+                  <h3 className="monitoring-scales-title">Monitoring tropical mountains and post-fire recovery</h3>
+                  {milestone.paragraphs.slice(3).map((paragraph) => <p key={paragraph}>{paragraph}</p>)}
+                  <GrasslandsMedia />
+                  <p className="monitoring-sites-invitation">
+                    Discover the ecosystems and locations that make up our monitoring network. {" "}
+                    <a className="inline-external-link" href="/monitoring-sites">Explore all monitoring sites →</a>
+                  </p>
+                  <h3 className="monitoring-scales-title">Connecting observations across scales</h3>
+                  <p>We combine near-surface phenocameras, drone surveys, and satellite imagery to connect changes in individual plants and canopies with patterns across tropical landscapes. Each approach provides a complementary perspective: phenocameras record daily canopy dynamics and allow the identification of biological events, drones reveal spatial variation, and satellites extend observations across larger areas.</p>
+                  <p>At sites where cameras operate alongside flux towers and meteorological sensors, these observations help connect vegetation change with climate and the exchange of carbon, water and energy. Computational tools turn repeated imagery into time series that can be compared across sites, ecosystems and observation scales.</p>
+                  <div className="multiscale-network-panels">
+                    <CaatingaPanel />
+                    <DryForestPanel />
+                  </div>
+                </>
+              )}
               {milestone.year === "2010–2011" && <AlgorithmPanel />}
             </div>
           </article>
         ))}
-      </section>
-
-      <section className="network-present">
-        <p className="section-number">{networkContent.present.label}</p>
-        <div>
-          <h2>{networkContent.present.title}</h2>
-          {networkContent.present.paragraphs.map((paragraph) => (
-            <LinkedParagraph
-              key={paragraph}
-              text={paragraph}
-              linkText={networkContent.present.linkText}
-              href={networkContent.present.linkHref}
-            />
-          ))}
-        </div>
       </section>
 
       <section className="network-participate" id="participate">
@@ -115,19 +136,19 @@ export default function NetworkPage() {
   );
 }
 
-function NetworkVideo() {
+function NetworkVideo({ videoId, title, caption }: { videoId: string; title: string; caption: string }) {
   return (
     <figure className="foundation-video">
       <div className="foundation-video-frame">
         <iframe
-          src="https://www.youtube-nocookie.com/embed/xIOXb9-__Fc"
-          title="About the e-Phenology Network"
+          src={`https://www.youtube-nocookie.com/embed/${videoId}`}
+          title={title}
           loading="lazy"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           allowFullScreen
         />
       </div>
-      <figcaption>Discover the origins and scientific vision of the e-Phenology Network.</figcaption>
+      <figcaption>{caption}</figcaption>
     </figure>
   );
 }
@@ -155,6 +176,16 @@ function AlgorithmPanel() {
             </div>
           ))}
         </div>
+        <figcaption className="algorithm-panel-caption">
+          Machine learning techniques for species identification based on phenocamera time series. For more details, see: {" "}
+          <a
+            href="https://www.sciencedirect.com/science/article/pii/S1574954113000654"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Almeida et al., 2014
+          </a>.
+        </figcaption>
       </div>
     </figure>
   );
@@ -184,42 +215,19 @@ function GrasslandsMedia() {
 }
 
 function CaatingaPanel() {
-  const sites = [
-    { name: "Cajueiro", image: "/network/caatinga-cajueiro.jpg" },
-    { name: "Campina Grande", image: "/network/caatinga-campina-grande.jpg" },
-    { name: "Floresta", image: "/network/caatinga-floresta.jpg" },
-  ];
-
   return (
-    <figure className="caatinga-panel">
-      <div className="caatinga-panel-heading">
-        <h3>Monitoring the Caatinga across Northeast Brazil.</h3>
-      </div>
-      <div className="caatinga-infrastructure">
-        <div>
-          <Image src="/network/caatinga-flux-tower.png" alt="Flux tower above Caatinga vegetation" width={1808} height={1017} sizes="(max-width: 760px) 100vw, 36vw" />
-          <figcaption>Flux tower in the Caatinga</figcaption>
-        </div>
-        <div>
-          <Image src="/network/caatinga-phenocamera.png" alt="Phenocamera view of seasonal Caatinga vegetation" width={802} height={613} sizes="(max-width: 760px) 100vw, 30vw" />
-          <figcaption>Phenocamera observation of the Caatinga canopy</figcaption>
-        </div>
-      </div>
-      <div className="caatinga-sites">
-        {sites.map((site) => (
-          <div key={site.name}>
-            <Image src={site.image} alt={`Hemispherical phenocamera image from the ${site.name} site`} width={1280} height={960} sizes="(max-width: 760px) 100vw, 22vw" />
-            <figcaption>{site.name}</figcaption>
-          </div>
-        ))}
-      </div>
+    <figure className="dry-forest-panel">
+      <Image src="/network/caatinga-flux-tower.png" alt="Flux tower above Caatinga vegetation" width={1808} height={1017} sizes="(max-width: 900px) 100vw, 45vw" />
+      <figcaption>Flux tower in the Caatinga.</figcaption>
     </figure>
   );
 }
 
 function DryForestPanel() {
   return (
-    <figure className="dry-forest-panel">
+    <figure className="dry-forest-panel drone-seasonal-panel">
+      <div className="drone-season-labels"><span>Dry season</span><span>Wet season</span></div>
+      <div className="drone-seasonal-image">
       <Image
         src="/network/tropical-dry-forest-seasonal-panel.png"
         alt="Aerial comparison of a tropical dry forest during the dry and wet seasons"
@@ -227,6 +235,7 @@ function DryForestPanel() {
         height={1596}
         sizes="(max-width: 760px) 100vw, 760px"
       />
+      </div>
       <figcaption>Drone observations of the seasonal changes in the canopy during dry and wet seasons, Petrolina, PE. Photos: Magna S.B. Moura.</figcaption>
     </figure>
   );

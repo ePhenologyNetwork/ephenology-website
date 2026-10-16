@@ -11,8 +11,6 @@ export const networkContent = {
     title: "More than a decade of tropical vegetation monitoring.",
     introduction:
       "The e-Phenology Network is a pioneering initiative dedicated to the continuous monitoring of vegetation dynamics across tropical ecosystems using digital cameras and remote sensing technologies.",
-    supportingText:
-      "Established in 2010, the network has grown through a sustained series of research projects and national and international partnerships. Together, these initiatives have expanded its monitoring infrastructure, introduced new observation technologies and consolidated e-Phenology as a reference in remote tropical phenology.",
   },
   milestones: [
     {
@@ -26,13 +24,12 @@ export const networkContent = {
     },
     {
       year: "2013–2015",
-      title: "Expanding across ecosystems, scales and partnerships",
+      title: "Following the rhythms of tropical vegetation",
       paragraphs: [
-        "The project “Combining New Technologies to Monitor Phenology from Leaves to Ecosystems” (FAPESP Grant 2013/50155-0), supported through the FAPESP Research Partnership for Technological Innovation Program in collaboration with Microsoft Research, expanded the scope of the network.",
-        "Monitoring grew to include tropical grasslands, dry tropical forests and rainforests, with an effort to associate tower-mounted cameras with existing flux-tower systems.",
-        "The integration of RGB digital cameras, hyperspectral sensors and unmanned aerial vehicles enabled observations across multiple scales, from individual leaves to entire ecosystems. The project also advanced image-processing methods, databases and machine-learning tools while supporting the expansion of the network to new sites.",
-        "In 2015, the network expanded into the Caatinga through the Brazil–United Kingdom project “Nordeste: A New Science for a Neglected Biome” (FAPESP Grant 2015/50488-5).",
-        "Supported by the Natural Environment Research Council, UK Research and Innovation, the Newton Fund and FAPESP, the initiative combined phenological monitoring with permanent vegetation plots, ecophysiological measurements and ecosystem modelling to investigate how semiarid ecosystems respond to global environmental change.",
+        "Phenology is the study of the timing of recurring biological events, such as leaf emergence, leaf fall, flowering and fruiting, and their relationship with environmental conditions. These events reveal how plants respond to seasonal cycles and environmental change.",
+        "Near-surface remote sensing uses cameras installed close to the vegetation to observe these changes repeatedly. Phenocameras capture daily images of plant canopies, creating continuous records of changes in canopy colour and greenness.",
+        "The e-Phenology Network focuses on tropical ecosystems, where long-term phenological records remain limited despite the diversity of vegetation and seasonal patterns. Sustained observations help distinguish regular seasonal cycles from year-to-year variation and longer-term responses to climate and disturbance.",
+        "Our monitoring spans seasonally dry forests, savannas, rainforests and tropical mountains. In the campo rupestre of Serra do Cipó, Brazil, phenocameras also document the dynamics of tropical mountain grasslands, including vegetation recovery after fire.",
       ],
     },
     {
