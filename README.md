@@ -3,7 +3,7 @@ Official website of the e-Phenology Network
 
 ## About
 
-The e-Phenology Web Platform is the official website of the e-Phenology Network, an international research network dedicated to monitoring tropical vegetation phenology using digital repeat photography (phenocams), remote sensing and ecological observations.
+The e-Phenology Web Platform is the official website of the e-Phenology Network, an international research network dedicated to monitoring tropical vegetation phenology using digital repeat photography (phenocameras), remote sensing and ecological observations.
 
 The platform aims to connect researchers, students and institutions by providing access to monitoring sites, scientific publications, data sharing policies and network activities.
 
