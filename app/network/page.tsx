@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { homeContent } from "../content";
 import { ContactFooter } from "../contact-footer";
 import { networkContent } from "./content";
@@ -9,9 +10,9 @@ export default function NetworkPage() {
       <div className="network-top">
         <header className="inner-header">
           <nav className="nav" aria-label="Main navigation">
-            <a className="brand" href="/" aria-label="Go to the e-Phenology home page" title="Home">
+            <Link className="brand" href="/" aria-label="Go to the e-Phenology home page" title="Home">
               <Image className="brand-logo" src="/brand/ephenology-logo.png" alt="e-Phenology" width={2104} height={565} priority />
-            </a>
+            </Link>
             <div className="nav-links">
               {homeContent.navigation.map((item) =>
                 item.label === "The Network" ? (

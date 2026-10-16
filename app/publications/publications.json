@@ -1,0 +1,688 @@
+[
+  {
+    "id": "Marques_2026_001",
+    "title": "Time-lapse digital cameras reveal contrasting environmental controls of leaf phenology in different caatinga physiognomies",
+    "authors": "Marques AML; Ramos DM; Morellato LPC; Dexter KG; Alberton B; Coutinho IAC",
+    "year": 2026,
+    "type": "Journal article",
+    "journal": "International Journal of Biometeorology",
+    "volume": 70,
+    "issue": null,
+    "pages": "210",
+    "doi": "10.1007/s00484-026-03261-x",
+    "url": "https://doi.org/10.1007/s00484-026-03261-x",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://doi.org/10.1007/s00484-026-03261-x",
+    "topics": [
+      "leaf phenology",
+      "phenocameras",
+      "climate variability",
+      "carrasco",
+      "crystalline caatinga",
+      "woody vegetation"
+    ],
+    "biomes": [
+      "Caatinga"
+    ],
+    "sites": [],
+    "projects": [],
+    "summary": "Four years of phenocamera observations compared leaf dynamics in carrasco and crystalline Caatinga communities. Precipitation and temperature influenced both physiognomies, but crystalline Caatinga was more sensitive to rainfall irregularity while carrasco showed more stable growing seasons."
+  },
+  {
+    "id": "Koolen_2025_001",
+    "title": "The Coexistence of Trees, Shrubs, and Grasses Creates a Complex Picture of Land Surface Phenology in Dry Tropical Ecosystems",
+    "authors": "Koolen SP; Godlee JL; Alberton B; Ramos DM; Moura MSB; Morellato LPC; Dexter KG",
+    "year": 2025,
+    "type": "Journal article",
+    "journal": "Remote Sensing",
+    "volume": 17,
+    "issue": 16,
+    "pages": "2883",
+    "doi": "10.3390/rs17162883",
+    "url": "https://www.mdpi.com/2072-4292/17/16/2883",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://www.mdpi.com/2072-4292/17/16/2883",
+    "topics": [
+      "land surface phenology",
+      "phenocameras",
+      "MODIS",
+      "tropical dry ecosystems",
+      "vegetation structure",
+      "seasonality"
+    ],
+    "biomes": [
+      "Caatinga",
+      "Cerrado"
+    ],
+    "sites": [
+      "PET",
+      "CORE",
+      "PEG"
+    ],
+    "projects": [],
+    "summary": "This study compared MODIS and phenocamera vegetation indices across four seasonally dry tropical sites. Fine-resolution cameras revealed distinct phenological behavior among trees, shrubs, and grasses that was obscured in coarser satellite observations."
+  },
+  {
+    "id": "Song_2024_001",
+    "title": "Scale matters: Spatial resolution impacts tropical leaf phenology characterized by multi-source satellite remote sensing with an ecological-constrained deep learning model",
+    "authors": "Song G; Wang J; Zhao Y; Yang D; Lee CKF; Guo Z; Detto M; Alberton B; Morellato P; Nelson B; Wu J",
+    "year": 2024,
+    "type": "Journal article",
+    "journal": "Remote Sensing of Environment",
+    "volume": 304,
+    "issue": null,
+    "pages": "114027",
+    "doi": "10.1016/j.rse.2024.114027",
+    "url": "https://doi.org/10.1016/j.rse.2024.114027",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "tropical leaf phenology",
+      "spatial resolution",
+      "satellite remote sensing",
+      "deep learning",
+      "deciduousness"
+    ],
+    "biomes": [
+      "Tropical Forests"
+    ],
+    "sites": [
+      "CORE",
+      "PEG"
+    ],
+    "projects": [],
+    "summary": "This study quantified how satellite spatial resolution affects tropical leaf-phenology monitoring. An ecologically constrained deep-learning model showed decreasing accuracy from PlanetScope to Sentinel-2 and Landsat-8, with finer imagery better capturing canopy deciduousness and phenological diversity."
+  },
+  {
+    "id": "Wang_2023_001",
+    "title": "An ecologically-constrained deep learning model for tropical leaf phenology monitoring using PlanetScope satellites",
+    "authors": "Wang J; Song G; Liddell M; Morellato P; Lee CKF; Yang D; Alberton B; Detto M; Ma X; Zhao Y; Yeung HCH; Zhang H; Ng M; Nelson BW; Huete A; Wu J",
+    "year": 2023,
+    "type": "Journal article",
+    "journal": "Remote Sensing of Environment",
+    "volume": 286,
+    "issue": null,
+    "pages": "113429",
+    "doi": "10.1016/j.rse.2022.113429",
+    "url": "https://doi.org/10.1016/j.rse.2022.113429",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "tropical forests",
+      "PlanetScope",
+      "deep learning",
+      "deciduousness",
+      "multiscale remote sensing",
+      "carbon cycles"
+    ],
+    "biomes": [
+      "Tropical Forests"
+    ],
+    "sites": [
+      "CORE",
+      "PEG"
+    ],
+    "projects": [],
+    "summary": "This study developed an index-guided, ecologically constrained autoencoder to estimate canopy deciduousness from high-resolution PlanetScope imagery. Evaluation across 16 tropical forest sites showed strong agreement with WorldView-2 and phenocamera observations from patch to ecosystem scales."
+  },
+  {
+    "id": "Alberton_2023_002",
+    "title": "Monitoring immediate post-fire vegetation dynamics of tropical mountain grasslands using phenocameras",
+    "authors": "Alberton B; Alvarado ST; da Silva Torres R; Fernandes GW; Morellato LPC",
+    "year": 2023,
+    "type": "Journal article",
+    "journal": "Ecological Informatics",
+    "volume": 78,
+    "issue": null,
+    "pages": "102341",
+    "doi": "10.1016/j.ecoinf.2023.102341",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1574954123003709",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "phenocameras",
+      "fire ecology",
+      "post-fire recovery",
+      "leaf phenology",
+      "campo rupestre",
+      "grassland management"
+    ],
+    "biomes": [
+      "Cerrado",
+      "Atlantic Forest"
+    ],
+    "sites": [
+      "CRSC_Q16",
+      "CRSC_CE",
+      "CRSC_RV_CRSC_EF"
+    ],
+    "projects": [],
+    "summary": "This study evaluated phenocameras for tracking immediate regrowth and short-term recovery after fire across four campo rupestre vegetation types in Serra do Cipó. Camera-derived greenness and growing-season metrics captured contrasting recovery dynamics and indicated ecosystem recovery by the third post-fire year."
+  },
+  {
+    "id": "Ramos_2023_001",
+    "title": "Multiscale phenology of seasonally dry tropical forests in an aridity gradient",
+    "authors": "Ramos DM; Andrade JM; Alberton BC; Moura MSB; Domingues TF; Neves N; Lima JRS; Souza R; Souza E; Silva JR; Espírito-Santo MM; Morellato LPC; Cunha J",
+    "year": 2023,
+    "type": "Journal article",
+    "journal": "Frontiers in Environmental Science",
+    "volume": 11,
+    "issue": null,
+    "pages": "1275844",
+    "doi": "10.3389/fenvs.2023.1275844",
+    "url": "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1275844/full",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1275844/full",
+    "topics": [
+      "seasonally dry tropical forest",
+      "phenocameras",
+      "MODIS",
+      "aridity gradient",
+      "land surface phenology"
+    ],
+    "biomes": [
+      "Caatinga"
+    ],
+    "sites": [
+      "PET",
+      "STA",
+      "SJO",
+      "CGR",
+      "LCA",
+      "MAN"
+    ],
+    "projects": [
+      "Caatinga-FLUX"
+    ],
+    "summary": "Phenocamera and MODIS time series were compared across seven Caatinga sites along an aridity gradient. Camera-calibrated thresholds improved estimates of growing-season transitions, while rainfall variability influenced greening timing and vegetation productivity."
+  },
+  {
+    "id": "Alberton_2023_001",
+    "title": "Relationship between tropical leaf phenology and ecosystem productivity using phenocameras",
+    "authors": "Alberton B; Martin TCM; Da Rocha HR; Richardson AD; Moura MSB; Torres RS; Morellato LPC",
+    "year": 2023,
+    "type": "Journal article",
+    "journal": "Frontiers in Environmental Science",
+    "volume": 11,
+    "issue": null,
+    "pages": "1223219",
+    "doi": "10.3389/fenvs.2023.1223219",
+    "url": "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1223219/full",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://www.frontiersin.org/journals/environmental-science/articles/10.3389/fenvs.2023.1223219/full",
+    "topics": [
+      "leaf phenology",
+      "ecosystem productivity",
+      "GPP",
+      "phenocameras",
+      "eddy covariance",
+      "climate drivers"
+    ],
+    "biomes": [
+      "Caatinga",
+      "Cerrado",
+      "Atlantic Forest"
+    ],
+    "sites": [
+      "CAAT",
+      "PEG",
+      "SVG"
+    ],
+    "projects": [],
+    "summary": "This comparative study linked phenocamera-derived leaf phenology with eddy-covariance estimates of gross primary productivity across Caatinga, Cerrado, and Atlantic Forest sites. Camera indices tracked productivity well, while water and light limitation varied among biomes."
+  },
+  {
+    "id": "Silva_2020_001",
+    "title": "A Change-Driven Image Foveation Approach for Tracking Plant Phenology",
+    "authors": "Silva E; da Silva Torres R; Alberton B; Morellato LPC; Silva TSF",
+    "year": 2020,
+    "type": "Journal article",
+    "journal": "Remote Sensing",
+    "volume": 12,
+    "issue": 9,
+    "pages": "1409",
+    "doi": "10.3390/rs12091409",
+    "url": "https://www.mdpi.com/2072-4292/12/9/1409",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://www.mdpi.com/2072-4292/12/9/1409",
+    "topics": [
+      "plant phenology tracking",
+      "image foveation",
+      "data compression",
+      "phenocameras",
+      "space-variant images"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This study proposed a change-driven image-foveation method that preserves higher resolution in phenologically relevant regions while reducing detail elsewhere. Validation with vegetation image sequences demonstrated storage savings while retaining information needed for phenology tracking."
+  },
+  {
+    "id": "Alberton_2019_001",
+    "title": "Leafing Patterns and Drivers across Seasonally Dry Tropical Communities",
+    "authors": "Alberton B; da Silva Torres R; Sanna Freire Silva T; da Rocha HR; Moura MSB; Morellato LPC",
+    "year": 2019,
+    "type": "Journal article",
+    "journal": "Remote Sensing",
+    "volume": 11,
+    "issue": 19,
+    "pages": "2267",
+    "doi": "10.3390/rs11192267",
+    "url": "https://www.mdpi.com/2072-4292/11/19/2267",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://www.mdpi.com/2072-4292/11/19/2267",
+    "topics": [
+      "vegetative phenology",
+      "phenocameras",
+      "climate drivers",
+      "seasonality",
+      "near-surface remote sensing"
+    ],
+    "biomes": [
+      "Caatinga",
+      "Cerrado"
+    ],
+    "sites": [
+      "PET",
+      "ITP",
+      "PEG",
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This multi-site study used phenocamera time series to compare leafing seasons in Caatinga and three Cerrado communities. Water availability was the main constraint in Caatinga, whereas day length was more influential across the Cerrado sites."
+  },
+  {
+    "id": "Mariano_2019_001",
+    "title": "RadialPheno: A tool for near-surface phenology analysis through radial layouts",
+    "authors": "Mariano GC; Alberton B; Morellato LPC; da Silva Torres R",
+    "year": 2019,
+    "type": "Journal article",
+    "journal": "Applications in Plant Sciences",
+    "volume": 7,
+    "issue": 6,
+    "pages": "e1253",
+    "doi": "10.1002/aps3.1253",
+    "url": "https://doi.org/10.1002/aps3.1253",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://doi.org/10.1002/aps3.1253",
+    "topics": [
+      "phenocameras",
+      "radial layouts",
+      "cyclical temporal data",
+      "information visualization",
+      "leaf phenology"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [
+      "e-Phenology"
+    ],
+    "summary": "This software note presented RadialPheno, an R Shiny tool that uses radial layouts to visualize cyclical phenocamera time series. The tool supported comparisons among individuals, species, communities, years, and field- versus camera-derived leaf phenology."
+  },
+  {
+    "id": "Camargo_2018_001",
+    "title": "Leafing patterns and leaf exchange strategies of a cerrado woody community",
+    "authors": "Camargo MGG; de Carvalho GH; Alberton BC; Reys P; Morellato LPC",
+    "year": 2018,
+    "type": "Journal article",
+    "journal": "Biotropica",
+    "volume": 50,
+    "issue": 3,
+    "pages": "442-454",
+    "doi": "10.1111/btp.12552",
+    "url": "https://doi.org/10.1111/btp.12552",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "leaf phenology",
+      "leaf exchange strategies",
+      "deciduousness",
+      "climate drivers",
+      "seasonality"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "Seven years of observations were used to characterize leaf exchange strategies and growing-season timing in a woody Cerrado community. Leaf fall peaked in the dry season, leaf flushing in the dry-to-wet transition, and interannual climate variation affected community deciduousness."
+  },
+  {
+    "id": "Fernandes_2018_001",
+    "title": "The deadly route to collapse and the uncertain fate of Brazilian rupestrian grasslands",
+    "authors": "Fernandes GW; Barbosa NPU; Alberton B; Barbieri A; Dirzo R; Goulart F; Guerra TJ; Morellato LPC; Solar RRC",
+    "year": 2018,
+    "type": "Journal article",
+    "journal": "Biodiversity and Conservation",
+    "volume": 27,
+    "issue": 10,
+    "pages": "2587-2603",
+    "doi": "10.1007/s10531-018-1556-4",
+    "url": "https://doi.org/10.1007/s10531-018-1556-4",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "biodiversity",
+      "campo rupestre",
+      "climate change",
+      "land-use change",
+      "mining",
+      "conservation"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [],
+    "projects": [],
+    "summary": "This study assessed threats to Brazilian rupestrian grasslands from mining, land-use change, inadequate conservation policy, and climate change. Scenario models projected severe future habitat losses, with consequences for biodiversity and ecosystem services."
+  },
+  {
+    "id": "Faria_2016_001",
+    "title": "Fusion of time series representations for plant recognition in phenology studies",
+    "authors": "Faria FA; Almeida J; Alberton B; Morellato LPC; da Silva Torres R",
+    "year": 2016,
+    "type": "Journal article",
+    "journal": "Pattern Recognition Letters",
+    "volume": 83,
+    "issue": null,
+    "pages": "205-214",
+    "doi": "10.1016/j.patrec.2016.03.005",
+    "url": "https://doi.org/10.1016/j.patrec.2016.03.005",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "plant identification",
+      "time series",
+      "recurrence plots",
+      "visual rhythms",
+      "classifier fusion"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This study represented phenological time series as recurrence plots and combined them with visual rhythms for plant recognition. The two representations captured complementary information, and classifier fusion improved fine-grained species classification."
+  },
+  {
+    "id": "Morellato_2016_001",
+    "title": "Linking plant phenology to conservation biology",
+    "authors": "Morellato LPC; Alberton B; Alvarado ST; Borges B; Buisson E; Camargo MGG; Cancian LF; Carstensen DW; Escobar DFE; Leite PTP; Mendoza I; Rocha NMWB; Soares NC; Silva TSF; Staggemeier VG; Streher AS; Vargas BC; Peres CA",
+    "year": 2016,
+    "type": "Journal article",
+    "journal": "Biological Conservation",
+    "volume": 195,
+    "issue": null,
+    "pages": "60-72",
+    "doi": "10.1016/j.biocon.2015.12.033",
+    "url": "https://doi.org/10.1016/j.biocon.2015.12.033",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "plant phenology",
+      "conservation biology",
+      "climate change",
+      "plant-animal interactions",
+      "restoration ecology",
+      "monitoring"
+    ],
+    "biomes": [],
+    "sites": [],
+    "projects": [],
+    "summary": "This perspective examined how phenology can inform conservation biology, including the management of climate-driven mismatches, land-use change, fire, invasive species, and restoration. It also highlighted long-term records and emerging monitoring technologies such as satellites, drones, and digital cameras."
+  },
+  {
+    "id": "Mariano_2016_001",
+    "title": "Modeling plant phenology database: Blending near-surface remote phenology with on-the-ground observations",
+    "authors": "Mariano GC; Morellato LPC; Almeida J; Alberton B; Camargo MGG; da Silva Torres R",
+    "year": 2016,
+    "type": "Journal article",
+    "journal": "Ecological Engineering",
+    "volume": 91,
+    "issue": null,
+    "pages": "396-408",
+    "doi": "10.1016/j.ecoleng.2016.03.001",
+    "url": "https://doi.org/10.1016/j.ecoleng.2016.03.001",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "phenology database",
+      "near-surface remote phenology",
+      "ground observations",
+      "digital images",
+      "ecological data"
+    ],
+    "biomes": [
+      "Cerrado",
+      "Atlantic Forest"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [
+      "e-Phenology"
+    ],
+    "summary": "This article described a database that integrates direct field observations, phenocamera indices, environmental measurements, and plant traits. Developed within the e-Phenology project, the system supports management and analysis of complex tropical phenology time series."
+  },
+  {
+    "id": "Almeida_2016_001",
+    "title": "Phenological visual rhythms: Compact representations for fine-grained plant species identification",
+    "authors": "Almeida J; dos Santos JA; Alberton B; Morellato LPC; da Silva Torres R",
+    "year": 2016,
+    "type": "Journal article",
+    "journal": "Pattern Recognition Letters",
+    "volume": 81,
+    "issue": null,
+    "pages": "90-100",
+    "doi": "10.1016/j.patrec.2015.11.028",
+    "url": "https://doi.org/10.1016/j.patrec.2015.11.028",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "remote phenology",
+      "plant identification",
+      "visual rhythms",
+      "time series",
+      "image analysis"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This article encoded phenological time series as compact visual rhythms and evaluated image descriptors for fine-grained plant identification. The representation achieved high species-recognition accuracy while reducing storage and processing requirements for long-term phenocamera data."
+  },
+  {
+    "id": "Leite_2016_001",
+    "title": "PhenoVis – A tool for visual phenological analysis of digital camera images using chronological percentage maps",
+    "authors": "Leite RA; Schnorr LM; Almeida J; Alberton B; Morellato LPC; da Silva Torres R; Comba JLD",
+    "year": 2016,
+    "type": "Journal article",
+    "journal": "Information Sciences",
+    "volume": 372,
+    "issue": null,
+    "pages": "181-195",
+    "doi": "10.1016/j.ins.2016.08.052",
+    "url": "https://doi.org/10.1016/j.ins.2016.08.052",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "phenology",
+      "remote sensing",
+      "visual analytics",
+      "vegetation indices",
+      "similarity ranking"
+    ],
+    "biomes": [
+      "Cerrado",
+      "Temperate Forest"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This article presented PhenoVis, a visual-analytics tool for exploring phenocamera image collections. Chronological percentage maps and similarity rankings helped identify seasonal patterns, compare years, and detect phenological events and outliers beyond simple average greenness curves."
+  },
+  {
+    "id": "Faria_2016_002",
+    "title": "Time series-based classifier fusion for fine-grained plant species recognition",
+    "authors": "Faria FA; Almeida J; Alberton B; Morellato LPC; Rocha A; da Silva Torres R",
+    "year": 2016,
+    "type": "Journal article",
+    "journal": "Pattern Recognition Letters",
+    "volume": 81,
+    "issue": null,
+    "pages": "101-109",
+    "doi": "10.1016/j.patrec.2015.10.016",
+    "url": "https://doi.org/10.1016/j.patrec.2015.10.016",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "plant identification",
+      "phenological time series",
+      "classifier fusion",
+      "diversity measures",
+      "image analysis"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This work evaluated phenological classifiers derived from RGB time series and combined complementary classifiers for fine-grained plant recognition. The fusion framework improved discrimination among Cerrado species with similar leaf functional strategies."
+  },
+  {
+    "id": "Almeida_2016_002",
+    "title": "Unsupervised Distance Learning for Plant Species Identification",
+    "authors": "Almeida J; Pedronette DCG; Alberton BC; Morellato LPC; da Silva Torres R",
+    "year": 2016,
+    "type": "Journal article",
+    "journal": "IEEE Journal of Selected Topics in Applied Earth Observations and Remote Sensing",
+    "volume": 9,
+    "issue": 12,
+    "pages": "5325-5338",
+    "doi": "10.1109/JSTARS.2016.2608358",
+    "url": "https://doi.org/10.1109/JSTARS.2016.2608358",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "plant identification",
+      "remote phenology",
+      "time series",
+      "unsupervised distance learning",
+      "image analysis"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This study proposed an unsupervised, rank-based distance-learning method for retrieving similar phenological time series and identifying plant species. Combining multiple time-series signals improved retrieval precision relative to pairwise similarity measures."
+  },
+  {
+    "id": "Almeida_2015_001",
+    "title": "Deriving vegetation indices for phenology analysis using genetic programming",
+    "authors": "Almeida J; dos Santos JA; Miranda WO; Alberton B; Morellato LPC; da Silva Torres R",
+    "year": 2015,
+    "type": "Journal article",
+    "journal": "Ecological Informatics",
+    "volume": 26,
+    "issue": null,
+    "pages": "61-69",
+    "doi": "10.1016/j.ecoinf.2015.01.003",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1574954115000114",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "remote phenology",
+      "digital cameras",
+      "vegetation indices",
+      "genetic programming",
+      "image analysis"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This study introduced a genetic-programming framework to derive vegetation indices from phenocamera imagery. Tests using Cerrado plant time series showed that learned combinations of color information characterized species-level leaf phenology more accurately than conventional indices alone."
+  },
+  {
+    "id": "Almeida_2014_001",
+    "title": "Applying machine learning based on multiscale classifiers to detect remote phenology patterns in Cerrado savanna trees",
+    "authors": "Almeida J; dos Santos JA; Alberton B; da Silva Torres R; Morellato LPC",
+    "year": 2014,
+    "type": "Journal article",
+    "journal": "Ecological Informatics",
+    "volume": 23,
+    "issue": null,
+    "pages": "49-61",
+    "doi": "10.1016/j.ecoinf.2013.06.011",
+    "url": "https://doi.org/10.1016/j.ecoinf.2013.06.011",
+    "openAccess": "No",
+    "openAccessUrl": null,
+    "topics": [
+      "remote phenology",
+      "digital cameras",
+      "machine learning",
+      "image analysis",
+      "plant identification"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "This study combined color and texture information from daily phenocamera images with multiscale machine-learning classifiers. The approach distinguished leaf phenology patterns among Cerrado tree species and supported automated identification of individuals and functional groups."
+  },
+  {
+    "id": "Alberton_2014_001",
+    "title": "Using phenological cameras to track the green up in a cerrado savanna and its on-the-ground validation",
+    "authors": "Alberton B, Almeida J,  Helm R,  Torres R.S, Menzel A, Morellato LPC",
+    "year": 2014,
+    "type": "Journal article",
+    "journal": "Ecological Informatics",
+    "volume": 19,
+    "issue": null,
+    "pages": "62-70",
+    "doi": "http://dx.doi.org/10.1016/j.ecoinf.2013.12.011",
+    "url": "https://www.sciencedirect.com/science/article/pii/S1574954113001325",
+    "openAccess": "Unknown",
+    "openAccessUrl": null,
+    "topics": [
+      "phenocameras",
+      "method validation",
+      "cerrado"
+    ],
+    "biomes": [
+      "Cerrado"
+    ],
+    "sites": [
+      "CORE"
+    ],
+    "projects": [],
+    "summary": "Digital cameras are reliable tool to capture leaf changes in cerrado vegetation. Three leaf exchange strategies were depicted from the species’ green color change. On-the-ground phenology validated the greening patterns and leaf functional groups"
+  }
+]

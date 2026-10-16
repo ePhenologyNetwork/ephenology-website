@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { ContactFooter } from "../contact-footer";
 import { homeContent } from "../content";
 import { InteractiveSitesMap } from "./interactive-map";
@@ -135,9 +136,9 @@ export default function MonitoringSitesPage() {
         </video>
         <div className="sites-hero-overlay" aria-hidden="true" />
         <nav className="nav" aria-label="Main navigation">
-          <a className="brand" href="/" aria-label="Go to the e-Phenology home page" title="Home">
+          <Link className="brand" href="/" aria-label="Go to the e-Phenology home page" title="Home">
             <Image className="brand-logo" src="/brand/ephenology-logo.png" alt="e-Phenology" width={2104} height={565} priority />
-          </a>
+          </Link>
           <div className="nav-links">
             {homeContent.navigation.map((item) =>
               item.label === "The Network" ? (

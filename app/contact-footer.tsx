@@ -5,12 +5,6 @@ export function ContactFooter() {
   return (
     <footer className="contact-footer" id="contact">
       <div className="contact-logos" aria-label="Affiliated institutions">
-        <Image
-          src="/brand/cbioclima-logo.png"
-          alt="CBioClima — Center for Research on Biodiversity Dynamics and Climate Change"
-          width={260}
-          height={228}
-        />
         <Image src="/brand/phenolab-logo.png" alt="Phenology Lab" width={182} height={146} />
       </div>
 

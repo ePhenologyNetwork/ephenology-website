@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { homeContent } from "./content";
 import { ContactFooter } from "./contact-footer";
 
@@ -18,9 +19,9 @@ export default function Home() {
     <main>
       <section className="hero">
         <nav className="nav" aria-label="Main navigation">
-          <a className="brand" href="/" aria-label="Go to the e-Phenology home page" title="Home">
+          <Link className="brand" href="/" aria-label="Go to the e-Phenology home page" title="Home">
             <BrandLogo />
-          </a>
+          </Link>
 
           <div className="nav-links">
               {homeContent.navigation.map((item) =>
@@ -65,85 +66,119 @@ export default function Home() {
 
       </section>
 
-      <section className="editorial-section" id="monitoring">
-        <div className="section-copy">
-          <p className="section-number">{homeContent.monitoring.sectionLabel}</p>
-          <div>
+      <section className="editorial-section monitoring-environments" id="monitoring">
+        <div className="combined-topics">
+          <article>
+            <p className="section-number">{homeContent.monitoring.sectionLabel}</p>
             <h2>{homeContent.monitoring.title}</h2>
             <p>{homeContent.monitoring.description}</p>
             <p>{homeContent.monitoring.supportingText}</p>
-          </div>
+          </article>
+          <article id="environments">
+            <p className="section-number">{homeContent.environments.sectionLabel}</p>
+            <h2>{homeContent.environments.title}</h2>
+            <p>{homeContent.environments.description}</p>
+            <p>{homeContent.environments.supportingText}</p>
+          </article>
         </div>
         <figure className="monitoring-panel">
-          <Image
-            src="/home/long-term-monitoring-panel.png"
-            alt="Phenological and flux towers equipped with cameras above tropical vegetation"
-            width={2400}
-            height={1000}
-            sizes="(max-width: 760px) calc(100vw - 32px), 1200px"
-          />
+          <div className="monitoring-marquee">
+            <div className="monitoring-marquee-track">
+              <Image
+                src="/home/long-term-monitoring-panel.png"
+                alt="Phenological and flux towers equipped with cameras above tropical vegetation"
+                width={2400}
+                height={1000}
+                sizes="(max-width: 760px) 900px, 1200px"
+              />
+              <Image
+                src="/home/long-term-monitoring-panel.png"
+                alt=""
+                aria-hidden="true"
+                width={2400}
+                height={1000}
+                sizes="(max-width: 760px) 900px, 1200px"
+              />
+            </div>
+          </div>
           <figcaption>
             Phenological and flux towers support continuous, long-term observations of tropical vegetation canopies.
           </figcaption>
         </figure>
       </section>
 
-      <section className="editorial-section environments" id="environments">
-        <div className="section-copy">
-          <p className="section-number">{homeContent.environments.sectionLabel}</p>
+      <section className="seasonal-story" id="seasonal-story">
+        <div className="seasonal-story-heading">
+          <p className="section-number">{homeContent.seasonalStory.sectionLabel}</p>
           <div>
-            <h2>{homeContent.environments.title}</h2>
-            <p>{homeContent.environments.description}</p>
-            <p>{homeContent.environments.supportingText}</p>
+            <h2>{homeContent.seasonalStory.title}</h2>
+            <p>{homeContent.seasonalStory.description}</p>
           </div>
         </div>
-        <figure className="environments-panel">
-          <Image
-            src="/home/tropical-environments-panel.png"
-            alt="Seasonal canopy comparison across tropical dry forest, woodland savanna and rainforest"
-            width={4128}
-            height={1214}
-            sizes="(max-width: 760px) calc(100vw - 32px), 1200px"
-          />
-          <figcaption>
-            Seasonal canopy variation across tropical dry forest, woodland savanna and rainforest.
-          </figcaption>
-        </figure>
+        <div className="seasonal-comparisons">
+          {homeContent.seasonalStory.ecosystems.map((ecosystem) => (
+            <figure className="seasonal-comparison" key={ecosystem.name}>
+              <div className="seasonal-image-pair">
+                <div>
+                  <Image src={ecosystem.dry} alt={`${ecosystem.name} vegetation during the dry season`} fill sizes="(max-width: 760px) 50vw, 17vw" />
+                  <span>Dry season</span>
+                </div>
+                <div>
+                  <Image src={ecosystem.wet} alt={`${ecosystem.name} vegetation during the wet season`} fill sizes="(max-width: 760px) 50vw, 17vw" />
+                  <span>Wet season</span>
+                </div>
+              </div>
+              <figcaption>{ecosystem.name}</figcaption>
+            </figure>
+          ))}
+        </div>
       </section>
 
       <section className="multiscale-section" id="multiscale">
-        <div className="section-copy">
-          <p className="section-number">{homeContent.multiscale.sectionLabel}</p>
-          <div>
+        <div className="multiscale-layout">
+          <article className="multiscale-copy">
+            <p className="section-number">{homeContent.multiscale.sectionLabel}</p>
             <h2>{homeContent.multiscale.title}</h2>
             <p>{homeContent.multiscale.description}</p>
             <p>{homeContent.multiscale.supportingText}</p>
-          </div>
+          </article>
+          <figure className="multiscale-figure">
+            <Image
+              src="/home/multiscale-observations.png"
+              alt="Multiscale monitoring approach combining on-the-ground observations, phenocameras, drones and satellites"
+              width={1726}
+              height={911}
+              sizes="(max-width: 760px) calc(100vw - 32px), 56vw"
+            />
+            <figcaption>
+              From individual plants to tropical landscapes: complementary observations connect processes across scales.
+            </figcaption>
+          </figure>
         </div>
-        <figure className="multiscale-figure">
-          <Image
-            src="/home/multiscale-observations.png"
-            alt="Multiscale monitoring approach combining on-the-ground observations, phenocameras, drones and satellites"
-            width={1726}
-            height={911}
-            sizes="(max-width: 760px) calc(100vw - 32px), 1200px"
-          />
-          <figcaption>
-            From individual plants to tropical landscapes: complementary observations connect processes across scales.
-          </figcaption>
-        </figure>
       </section>
 
       <section className="explore-network-section" id="explore-network">
         <div className="explore-network-heading">
           <p className="section-number">Explore the network</p>
           <div>
-            <h2>Follow the observations. Become part of the network.</h2>
-            <p>Discover where we work and how researchers and institutions can connect with e-Phenology.</p>
+            <h2>Where would you like to begin?</h2>
+            <p>Choose a path to understand the science, explore the monitoring network, or take part in its next chapter.</p>
           </div>
         </div>
 
         <div className="explore-network-grid">
+          <article className="explore-network-card community-callout-card">
+            <div className="community-preview">
+              <Image src="/home/seasons/cerrado-wet.jpg" alt="A green Cerrado canopy observed during the wet season" fill sizes="(max-width: 760px) 100vw, 33vw" />
+            </div>
+            <div className="explore-network-copy">
+              <p className="explore-card-label">What do we monitor?</p>
+              <h3>Understand the rhythm of tropical vegetation.</h3>
+              <p>See how repeated images turn seasonal change into scientific evidence.</p>
+              <a href="#seasonal-story">Discover phenology <span aria-hidden="true">↓</span></a>
+            </div>
+          </article>
+
           <article className="explore-network-card map-callout-card">
             <div className="home-map-preview">
               <Image
@@ -155,7 +190,7 @@ export default function Home() {
               <div className="home-map-stat"><strong>23</strong><span>monitoring sites</span></div>
             </div>
             <div className="explore-network-copy">
-              <p className="explore-card-label">Discover our monitoring sites</p>
+              <p className="explore-card-label">Meet our monitoring sites</p>
               <h3>A network across tropical ecosystems.</h3>
               <p>Explore the locations, ecosystems and observations that shape our tropical phenology monitoring network.</p>
               <a href="/monitoring-sites">Explore the map <span aria-hidden="true">↗</span></a>
@@ -168,7 +203,7 @@ export default function Home() {
               <Image src="/home/how-to-participate-tower.jpg" alt="Researchers collecting data from a monitoring tower in the Cerrado" fill sizes="(max-width: 760px) 100vw, 25vw" />
             </div>
             <div className="explore-network-copy">
-              <p className="explore-card-label">Join the e-Phenology Network</p>
+              <p className="explore-card-label">For institutions and collaborators</p>
               <h3>Build the next chapter with us.</h3>
               <p>Researchers and institutions can contribute observations, establish new monitoring sites and collaborate on the analysis of tropical vegetation dynamics.</p>
               <a href="/network#participate">How to participate <span aria-hidden="true">↗</span></a>
