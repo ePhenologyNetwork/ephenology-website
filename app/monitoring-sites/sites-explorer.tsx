@@ -1,6 +1,7 @@
 "use client";
 
 import Image from "next/image";
+import Link from "next/link";
 import { useEffect, useMemo, useState } from "react";
 
 export type SiteDataType = "Phenocamera" | "Climate data" | "Flux data" | "Drone imagery";
@@ -25,6 +26,20 @@ export type MonitoringSite = {
   institution?: string;
 };
 
+export type StudyArea = {
+  id: string;
+  name: string;
+  subtitle: string;
+  ecosystem: string;
+  location: string;
+  startYear: number;
+  siteCount: number;
+  cameraCount: number;
+  siteIds: string[];
+  image: string;
+  href: string;
+};
+
 export function SiteDataIcon({ type }: { type: SiteDataType }) {
   const common = { width: 18, height: 18, viewBox: "0 0 24 24", fill: "none", stroke: "currentColor", strokeWidth: 1.8, strokeLinecap: "round" as const, strokeLinejoin: "round" as const, "aria-hidden": true };
 
@@ -34,14 +49,28 @@ export function SiteDataIcon({ type }: { type: SiteDataType }) {
   return <svg {...common}><path d="M9 10h6l2 3-5 3-5-3z"/><path d="M12 16v3M5 7l4 3M19 7l-4 3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg>;
 }
 
-export function SitesExplorer({ sites }: { sites: MonitoringSite[] }) {
+export function SitesExplorer({
+  sites,
+  studyAreas = [],
+  showFilters = true,
+}: {
+  sites: MonitoringSite[];
+  studyAreas?: StudyArea[];
+  showFilters?: boolean;
+}) {
   const [filter, setFilter] = useState("All sites");
   const [selectedSite, setSelectedSite] = useState<MonitoringSite | null>(null);
   const filters = ["All sites", "Cerrado", "Caatinga", "Atlantic Forest", "Amazon rainforest", "Campo rupestre"];
+  const groupedSiteIds = useMemo(() => new Set(studyAreas.flatMap((area) => area.siteIds)), [studyAreas]);
   const visibleSites = useMemo(
-    () => filter === "All sites" ? sites : sites.filter((site) => site.ecosystem === filter),
-    [filter, sites],
+    () => sites.filter((site) => !groupedSiteIds.has(site.id) && (filter === "All sites" || site.ecosystem === filter)),
+    [filter, groupedSiteIds, sites],
   );
+  const visibleStudyAreas = useMemo(
+    () => studyAreas.filter((area) => filter === "All sites" || area.ecosystem === filter),
+    [filter, studyAreas],
+  );
+  const resultCount = visibleSites.length + visibleStudyAreas.length;
 
   useEffect(() => {
     if (!selectedSite) return;
@@ -54,17 +83,43 @@ export function SitesExplorer({ sites }: { sites: MonitoringSite[] }) {
 
   return (
     <>
-      <div className="sites-filters" aria-label="Filter monitoring sites">
-        {filters.map((item) => (
-          <button className={filter === item ? "is-active" : ""} key={item} onClick={() => setFilter(item)} type="button">
-            {item}
-          </button>
-        ))}
-      </div>
+      {showFilters && (
+        <div className="sites-filters" aria-label="Filter monitoring sites">
+          {filters.map((item) => (
+            <button className={filter === item ? "is-active" : ""} key={item} onClick={() => setFilter(item)} type="button">
+              {item}
+            </button>
+          ))}
+        </div>
+      )}
 
-      <p className="sites-result-count">Showing {visibleSites.length} monitoring {visibleSites.length === 1 ? "site" : "sites"}</p>
+      <p className="sites-result-count">Showing {resultCount} catalogue {resultCount === 1 ? "entry" : "entries"}</p>
 
       <div className="sites-grid">
+        {visibleStudyAreas.map((area) => (
+          <Link className="site-card study-area-card" href={area.href} key={area.id} aria-label={`Explore the ${area.name} study area`}>
+            <div className="site-card-image">
+              <Image src={area.image} alt={`Representative view of ${area.name}`} fill sizes="(max-width: 760px) 100vw, 32vw" />
+              <span className="study-area-label">Study area</span>
+            </div>
+            <div className="site-card-copy">
+              <div className="site-card-heading">
+                <div>
+                  <p>{area.ecosystem}</p>
+                  <h3>{area.name}</h3>
+                </div>
+                <span>Since {area.startYear}</span>
+              </div>
+              <p className="study-area-subtitle">{area.subtitle}</p>
+              <dl>
+                <div><dt>Locations</dt><dd>{area.siteCount} monitoring sites</dd></div>
+                <div><dt>Region</dt><dd>{area.location}</dd></div>
+                <div><dt>Cameras</dt><dd>{area.cameraCount} phenocameras</dd></div>
+              </dl>
+              <span className="study-area-link">Explore study area <span aria-hidden="true">→</span></span>
+            </div>
+          </Link>
+        ))}
         {visibleSites.map((site) => (
           <button className="site-card" key={`${site.id}-${site.acronym}`} onClick={() => setSelectedSite(site)} type="button" aria-label={`Open profile for ${site.name}`}>
             <div className="site-card-image">

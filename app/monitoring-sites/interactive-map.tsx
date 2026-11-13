@@ -17,7 +17,17 @@ const mapDataIcons: Record<SiteDataType, string> = {
   "Drone imagery": '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor"><path d="M9 10h6l2 3-5 3-5-3zM12 16v3M5 7l4 3M19 7l-4 3"/><circle cx="4" cy="6" r="2"/><circle cx="20" cy="6" r="2"/><circle cx="6" cy="17" r="2"/><circle cx="18" cy="17" r="2"/></svg>',
 };
 
-export function InteractiveSitesMap({ sites }: { sites: GeoreferencedSite[] }) {
+export function InteractiveSitesMap({
+  sites,
+  maxZoom = 6,
+  showFilters = true,
+  message = "Click a marker to explore its monitoring site",
+}: {
+  sites: GeoreferencedSite[];
+  maxZoom?: number;
+  showFilters?: boolean;
+  message?: string;
+}) {
   const mapElement = useRef<HTMLDivElement>(null);
   const [filter, setFilter] = useState("All sites");
   const filteredSites = useMemo(
@@ -89,7 +99,7 @@ export function InteractiveSitesMap({ sites }: { sites: GeoreferencedSite[] }) {
         bounds.extend([site.latitude, site.longitude]);
       });
 
-      map.fitBounds(bounds, { padding: [42, 42], maxZoom: 6 });
+      map.fitBounds(bounds, { padding: [42, 42], maxZoom });
       cleanup = () => map.remove();
     });
 
@@ -97,21 +107,23 @@ export function InteractiveSitesMap({ sites }: { sites: GeoreferencedSite[] }) {
       disposed = true;
       cleanup();
     };
-  }, [filteredSites]);
+  }, [filteredSites, maxZoom]);
 
   return (
     <div className="interactive-map-shell">
-      <div className="map-filter-bar" aria-label="Filter sites shown on map">
-        {mapFilters.map((item) => (
-          <button className={filter === item ? "is-active" : ""} key={item} onClick={() => setFilter(item)} type="button">
-            {item}
-          </button>
-        ))}
-      </div>
+      {showFilters && (
+        <div className="map-filter-bar" aria-label="Filter sites shown on map">
+          {mapFilters.map((item) => (
+            <button className={filter === item ? "is-active" : ""} key={item} onClick={() => setFilter(item)} type="button">
+              {item}
+            </button>
+          ))}
+        </div>
+      )}
       <div className="interactive-sites-map" ref={mapElement} aria-label={`Interactive map showing ${filteredSites.length} monitoring sites`} />
       <div className="map-message">
         <strong>{filteredSites.length} georeferenced {filteredSites.length === 1 ? "site" : "sites"}</strong>
-        <span>Click a marker to explore its monitoring site</span>
+        <span>{message}</span>
       </div>
     </div>
   );
