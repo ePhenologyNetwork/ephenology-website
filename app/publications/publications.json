@@ -1,5 +1,71 @@
 [
   {
+    "id": "Ramos_2026_001",
+    "title": "The PhenoChange network protocol for monitoring leaf phenology in tropical dry ecosystems using phenocameras",
+    "authors": "Ramos DM; Gonçalves FMP; Moura MS; Espírito-Santo MM; Coutinho IAC; De Cauwer V; Alberton BC; Muledi J; Ryan CM; Cachissapa MJ; Santana MCN; Uusiku GIK; Marques AML; O'Leary F; Françoso RD; Neves NP; Godlee JL; Santos MMP; Naftal L; Nkulu D; Williams M; Phillimore AB; Richardson AD; Seči M; Chicomo M; Wesely N; Milodowski DT; Harrison SB; Oddi L; Siniscalco C; Mota FCM; Almeida J; Torres RS; Siqueira MBB; Dexter KG; Morellato LPC",
+    "year": 2026,
+    "type": "Journal article",
+    "journal": "Methods in Ecology and Evolution",
+    "volume": 17,
+    "issue": 11,
+    "pages": "3245-3259",
+    "doi": "10.1111/2041-210x.70404",
+    "url": "https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210x.70404",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210x.70404",
+    "topics": [
+      "tropical dry ecosystems",
+      "leaf phenology",
+      "phenocameras",
+      "standardized monitoring protocol",
+      "canopy and ground layer",
+      "trail cameras"
+    ],
+    "biomes": [
+      "Tropical dry ecosystems",
+      "Savanna",
+      "Dry forest",
+      "Woodland"
+    ],
+    "sites": [],
+    "projects": [
+      "PhenoChange"
+    ],
+    "summary": "This study presents a standardized PhenoChange protocol for monitoring canopy and ground-layer leaf phenology with pole- and tree-mounted trail cameras. Tests in Brazil and Angola showed that the approach captures seasonal vegetation patterns reliably and supports scalable monitoring in remote tropical dry ecosystems."
+  },
+  {
+    "id": "OLeary_2026_001",
+    "title": "Moderate Resolution Satellites Monitor Vegetation Phenology Accurately in African Savannas: A Comparison with Ground Data from Phenocams",
+    "authors": "O'Leary FC; Ramos DM; Morellato LPC; De Cauwer V; Gonçalves FM; Ryan CM; Cachissapa M; Uusiku GIK; Godlee JL; Alberton B; Seči M; Baker TR; Dexter KG",
+    "year": 2026,
+    "type": "Journal article",
+    "journal": "Remote Sensing",
+    "volume": 18,
+    "issue": 20,
+    "pages": "3545",
+    "doi": "10.3390/rs18203545",
+    "url": "https://www.mdpi.com/2072-4292/18/20/3545",
+    "openAccess": "Yes",
+    "openAccessUrl": "https://www.mdpi.com/2072-4292/18/20/3545",
+    "topics": [
+      "African savannas",
+      "vegetation phenology",
+      "phenocameras",
+      "MODIS",
+      "VIIRS",
+      "Sentinel-2",
+      "growing season"
+    ],
+    "biomes": [
+      "African Savanna"
+    ],
+    "sites": [],
+    "projects": [
+      "PhenoChange"
+    ],
+    "summary": "This study compared MODIS, VIIRS and Sentinel-2 vegetation indices with phenocamera observations across ten African savanna plots. MODIS NDVI provided the most accurate overall estimates of seasonal transitions, supporting moderate-resolution satellites for large-scale phenology monitoring and upscaling phenocamera observations."
+  },
+  {
     "id": "Marques_2026_001",
     "title": "Time-lapse digital cameras reveal contrasting environmental controls of leaf phenology in different caatinga physiognomies",
     "authors": "Marques AML; Ramos DM; Morellato LPC; Dexter KG; Alberton B; Coutinho IAC",

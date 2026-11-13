@@ -1,5 +1,24 @@
 [
   {
+    "fullName": "Patricia Morellato",
+    "displayName": "Prof Dr Patricia Morellato",
+    "category": "Coordination",
+    "role": "Researcher and Data management and curation",
+    "institution": "Sao Paulo State Univeristy",
+    "city": "Rio Claro",
+    "country": "Brazil",
+    "researchAreas": [
+      "Tropical phenology and climate change"
+    ],
+    "biography": null,
+    "startYear": 2011,
+    "email": "patricia.morellato@unesp.br",
+    "orcid": "https://orcid.org/0000-0001-5265-8988",
+    "lattes": "http://lattes.cnpq.br/1012217731137451",
+    "personalWebsite": null,
+    "photo": "/people/patricia-morellato.jpeg"
+  },
+  {
     "fullName": "Bruna Alberton",
     "displayName": "Dr Bruna Alberton",
     "category": "Coordination",
@@ -19,25 +38,6 @@
     "lattes": "http://lattes.cnpq.br/5270539335811903",
     "personalWebsite": null,
     "photo": "/people/bruna-alberton.jpg"
-  },
-  {
-    "fullName": "Patricia Morellato",
-    "displayName": "Prof Dr Patricia Morellato",
-    "category": "Coordination",
-    "role": "Researcher and Data management and curation",
-    "institution": "Sao Paulo State Univeristy",
-    "city": "Rio Claro",
-    "country": "Brazil",
-    "researchAreas": [
-      "Tropical phenology and climate change"
-    ],
-    "biography": null,
-    "startYear": 2011,
-    "email": "patricia.morellato@unesp.br",
-    "orcid": "https://orcid.org/0000-0001-5265-8988",
-    "lattes": "http://lattes.cnpq.br/1012217731137451",
-    "personalWebsite": null,
-    "photo": "/people/patricia-morellato.jpeg"
   },
   {
     "fullName": "Magna Soelma Beserra de Moura",
@@ -156,7 +156,7 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/nathan-felipe-alves.jpeg"
   },
   {
     "fullName": "Luisa Antonio",
@@ -173,7 +173,7 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/luisa-antonio.jpeg"
   },
   {
     "fullName": "Ingryd Maia",
@@ -190,7 +190,7 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/ingryd-maia.jpeg"
   },
   {
     "fullName": "Ricardo da Silva Torres",
@@ -292,17 +292,36 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/john-cunha.jpeg"
   },
   {
     "fullName": "Bruce Silva",
     "displayName": "Bruce Silva",
     "category": "Technical team",
     "role": "Field Technician",
-    "institution": null,
+    "institution": "Universidade Federal de Campina Grande (UFCG)",
     "city": null,
-    "country": null,
+    "country": "Brazil",
     "researchAreas": [],
+    "biography": null,
+    "startYear": null,
+    "email": null,
+    "orcid": null,
+    "lattes": null,
+    "personalWebsite": null,
+    "photo": null
+  },
+  {
+    "fullName": "Joabe Santos de Almeida",
+    "displayName": "Joabe Santos de Almeida",
+    "category": "Technical team",
+    "role": "Field Technician",
+    "institution": "Embrapa Semiárido · Empresa Brasileira de Pesquisa Agropecuária (Embrapa)",
+    "city": "Petrolina, PE",
+    "country": "Brazil",
+    "researchAreas": [
+      "Assistant — Agrometeorology Sector"
+    ],
     "biography": null,
     "startYear": null,
     "email": null,
@@ -343,7 +362,7 @@
     "orcid": null,
     "lattes": null,
     "personalWebsite": null,
-    "photo": null
+    "photo": "/people/thieres-silva.jpeg"
   },
   {
     "fullName": "Romualdo Lima",
